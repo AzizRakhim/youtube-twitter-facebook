@@ -19,12 +19,31 @@ body{
     transform-style: preserve-3d;
 }
 
-.content:hover{
-    animation: cube 1s 1 ease both;
+.content{
+    animation: cube 2s both;
     z-index: 1;
 }
 
 @keyframes cube {
+    0% {
+        transform: rotateX(0deg) rotateY(-180deg) rotateZ(-360deg);
+    }
+    
+    50% {
+        transform: rotateX(-180px) rotateY(180px) rotateZ(180px);
+    }
+    
+    100% {
+         transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+.content:hover{
+    animation: my-cube 2s both;
+    z-index: 1;
+}
+
+@keyframes my-cube {
     0% {
         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
