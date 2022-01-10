@@ -1,8 +1,7 @@
 body{
     background-color: #2e2e2e;
     min-height: 100vh;
-    perspective: 1000px;
-    
+    perspective: 1000px;  
 }
 
 .entry{
@@ -37,7 +36,7 @@ body{
     100% {
          transform:rotateX(0deg) rotateY(-180deg) rotateZ(-360deg);
     }
-  }
+}
 
 
 .box{
