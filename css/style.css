@@ -29,44 +29,37 @@ body{
     width: 201px;
     height: 201px;
     border: 1px solid #2e2e2e;
-    text-align: center;
     line-height: 200px;
     font-size: 30px;
-    text-transform: capitalize;
     position: absolute;
     top: 0;
     left: 0;
+    background-color: #fefefe;
 }
 
 .front{
     transform: translate3d(0, 0, 100px);
-    background-color: #fff;
 }
 
 .back {
     transform: translate3d(0, 0, -100px) rotateX(180deg);
     background-color: #ff1e01;
- 
 }
 
 .left {
     transform: translate3d(-100px, 0, 0px) rotateY(-90deg);
-    background-color: #fefefe;
 }
 
 .right {
     transform: translate3d(100px, 0, 0px) rotateY(90deg);
-    background-color: #fefefe;
 }
 
 .top {
     transform: translate3d(0px, -100px, 0px) rotateX(90deg);
-    background-color: #fefefe;
 }
 
 .bottom {
-    transform: translate3d(0px, 100px, 0px) rotateX(90deg);
-    background-color: #fefefe;
+    transform: translate3d(0px, 100px, 0px) rotateX(-90deg);
 }
 
 .content:nth-child(2) .back{
@@ -77,8 +70,8 @@ body{
     background-color: #3c5fa0;
 }
 
-i{
-    color: #7D7D7D;
+.bx{
+    color: #7d7d7d;
     font-weight: 700;
     font-size: 72px;
 }
